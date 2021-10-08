@@ -414,7 +414,7 @@ select {
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
-	color: #5e6576;
+	color: #000000;
 	text-decoration: none;
 	transition: all 0.2s ease;
 }
@@ -597,8 +597,8 @@ select {
 /*     Details 1     */
 /*********************/
 .basic-1 {
-	padding-top: 2.5rem;
-	padding-bottom: 5rem;
+	padding-top: 7rem;
+	padding-bottom: 3rem;
 }
 
 .basic-1 .image-container {
@@ -1089,7 +1089,7 @@ select {
 	border: none;
 	border-radius: 50%;
 	outline: none;
-	background-color: #44434a;
+	background-color: #6168ff;
 	cursor: pointer;
 }
 
@@ -1638,4 +1638,8 @@ select {
 	box-shadow: 0px 15px 20px rgba(46, 73, 229, 0.4);
 	color: #fff !important;
 	transform: translateY(-7px);
+}
+
+.close-button:hover {
+	background-color: #fff !important;
 }
