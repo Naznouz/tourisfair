@@ -24,24 +24,28 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f9f9f9
-- Buttons - red #ff5574
+- Buttons - red #6EC1E4
 - Buttons - blue #6168ff
 - Headings text - black #222222
 - Body text - dark gray #5e6576
 ******************************************/
 
-
 /**************************/
 /*     General Styles     */
 /**************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
+	font-family: "Lato", sans-serif !important;
 }
 
-body, p {
-	color: #5e6576; 
+body,
+p {
+	color: #5e6576;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -146,8 +150,8 @@ a:hover {
 	margin-bottom: 0.75rem;
 	padding: 0.125rem 1.75rem;
 	border-radius: 30px;
-	background-color: #ffe7eb;
-	color: #ff5574;
+	background-color: #6168ff;
+	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
 }
@@ -155,9 +159,9 @@ a:hover {
 .btn-solid-reg {
 	display: inline-block;
 	padding: 1.375rem 2.25rem 1.375rem 2.25rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6ec1e4;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6ec1e4;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -168,16 +172,16 @@ a:hover {
 
 .btn-solid-reg:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #6ec1e4; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6ec1e4;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6ec1e4;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -188,16 +192,16 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #6ec1e4; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
 .btn-solid-sm {
 	display: inline-block;
 	padding: 1rem 1.5rem 1rem 1.5rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6ec1e4;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6ec1e4;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -208,7 +212,7 @@ a:hover {
 
 .btn-solid-sm:hover {
 	background-color: transparent;
-	color: #ff5574; /* needs to stay here because of the color property of a tag */
+	color: #6ec1e4; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -301,16 +305,16 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
-    -webkit-appearance: none;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-image: url('../images/down-arrow.png');
-    background-position: 98% 50%;
-    background-repeat: no-repeat;
-    outline: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url("../images/down-arrow.png");
+	background-position: 98% 50%;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 .form-control-textarea {
@@ -333,9 +337,9 @@ select {
 	display: inline-block;
 	width: 100%;
 	height: 3.25rem;
-	border: 1px solid #ff5574;
+	border: 1px solid #6ec1e4;
 	border-radius: 30px;
-	background-color: #ff5574;
+	background-color: #6ec1e4;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -345,11 +349,10 @@ select {
 }
 
 .form-control-submit-button:hover {
-	border: 1px solid #ff5574;
+	border: 1px solid #6ec1e4;
 	background-color: transparent;
-	color: #ff5574;
+	color: #6ec1e4;
 }
-
 
 /**********************/
 /*     Navigation     */
@@ -368,7 +371,7 @@ select {
 }
 
 .navbar .logo-image img {
-    width: 133px;
+	width: 133px;
 	height: 30px;
 }
 
@@ -391,9 +394,10 @@ select {
 	overflow-y: auto;
 	visibility: hidden;
 	background-color: #ffffff;
-	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
 }
 
 .offcanvas-collapse.open {
@@ -427,12 +431,12 @@ select {
 }
 
 @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -483,7 +487,6 @@ select {
 	color: #6168ff;
 }
 
-
 /******************/
 /*     Header     */
 /******************/
@@ -520,7 +523,6 @@ select {
 	margin-bottom: 5rem;
 }
 
-
 /********************/
 /*     Services     */
 /********************/
@@ -546,15 +548,16 @@ select {
 }
 
 .cards-1 .card-icon.blue {
-	background: url('../images/services-icon-bg-blue.png') center center no-repeat;
+	background: url("../images/services-icon-bg-blue.png") center center no-repeat;
 }
 
 .cards-1 .card-icon.yellow {
-	background: url('../images/services-icon-bg-yellow.png') center center no-repeat;
+	background: url("../images/services-icon-bg-yellow.png") center center
+		no-repeat;
 }
 
 .cards-1 .card-icon.red {
-	background: url('../images/services-icon-bg-red.png') center center no-repeat;
+	background: url("../images/services-icon-bg-red.png") center center no-repeat;
 }
 
 .cards-1 .card-icon .fas,
@@ -590,7 +593,6 @@ select {
 	margin-left: 0.5rem;
 }
 
-
 /*********************/
 /*     Details 1     */
 /*********************/
@@ -618,7 +620,6 @@ select {
 .basic-1 .btn-solid-reg {
 	cursor: pointer;
 }
-
 
 /*************************/
 /*     Details Modal     */
@@ -688,7 +689,6 @@ select {
 	cursor: pointer;
 }
 
-
 /*********************/
 /*     Details 2     */
 /*********************/
@@ -723,7 +723,7 @@ select {
 }
 
 .counter .counter-cell.red {
-	color: #ff5574;
+	color: #6ec1e4;
 }
 
 .counter .purecounter {
@@ -734,7 +734,7 @@ select {
 }
 
 .counter .purecounter:after {
-    content: "+";
+	content: "+";
 	margin-left: 0.5rem;
 }
 
@@ -742,7 +742,6 @@ select {
 	font-size: 0.875rem;
 	line-height: 1.5rem;
 }
-
 
 /********************/
 /*     Projects     */
@@ -772,7 +771,7 @@ select {
 
 .filter .button:hover,
 .filter .button.is-checked {
-	color: #ff5574;
+	color: #6ec1e4;
 }
 
 .filter .grid {
@@ -802,7 +801,6 @@ select {
 .filter .element-item p strong {
 	color: #222222;
 }
-
 
 /************************/
 /*     Testimonials     */
@@ -874,7 +872,6 @@ select {
 	font-size: 1.125rem;
 }
 
-
 /********************/
 /*     Pricing     */
 /********************/
@@ -945,7 +942,6 @@ select {
 	letter-spacing: -0.2px;
 }
 
-
 /**********************/
 /*     Invitation     */
 /**********************/
@@ -957,7 +953,7 @@ select {
 .basic-2 .text-container {
 	padding: 5rem 1.5rem 5rem 1.5rem;
 	border-radius: 28px;
-	background: url('../images/invitation-background.jpg') center center no-repeat;
+	background: url("../images/invitation-background.jpg") center center no-repeat;
 	background-size: cover;
 }
 
@@ -970,7 +966,6 @@ select {
 	margin-bottom: 0;
 	color: #ffffff;
 }
-
 
 /*******************/
 /*     Contact     */
@@ -1002,7 +997,6 @@ select {
 	color: #6168ff;
 }
 
-
 /******************/
 /*     Footer     */
 /******************/
@@ -1019,7 +1013,7 @@ select {
 	left: 0;
 }
 
-.footer div[class*="col"] {  
+.footer div[class*="col"] {
 	/* selects all elements which have classes starting with col */
 	/* needed so that the absolute positioned decoration stays behind */
 	position: relative;
@@ -1037,7 +1031,7 @@ select {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #222222;
+	color: #222222;
 	transition: all 0.2s ease;
 }
 
@@ -1051,9 +1045,8 @@ select {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #222222;
+	color: #222222;
 }
-
 
 /*********************/
 /*     Copyright     */
@@ -1077,23 +1070,22 @@ select {
 	margin-bottom: 0.75rem;
 }
 
-
 /******************************/
 /*     Back To Top Button     */
 /******************************/
 #myBtn {
-	position: fixed; 
-  	z-index: 99; 
-	bottom: 20px; 
-	right: 20px; 
-	display: none; 
+	position: fixed;
+	z-index: 99;
+	bottom: 20px;
+	right: 20px;
+	display: none;
 	width: 52px;
 	height: 52px;
-	border: none; 
-	border-radius: 50%; 
-	outline: none; 
-	background-color: #44434a; 
-	cursor: pointer; 
+	border: none;
+	border-radius: 50%;
+	outline: none;
+	background-color: #44434a;
+	cursor: pointer;
 }
 
 #myBtn:hover {
@@ -1104,7 +1096,6 @@ select {
 	margin-bottom: 0.25rem;
 	width: 18px;
 }
-
 
 /***********************/
 /*     Extra Pages     */
@@ -1159,30 +1150,28 @@ select {
 	margin-bottom: 0.5rem;
 }
 
-
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
-
 	/* Header */
 	.header {
 		padding-top: 9rem;
 	}
 
 	.header .h1-large {
-		font-size: 2.75rem;
+		font-size: 3.75rem;
 		line-height: 3.5rem;
+		font-weight: 800;
 	}
 	/* end of header */
-
 
 	/* Details 2 */
 	.counter .counter-container {
 		text-align: left;
 	}
-	
+
 	.counter .counter-cell {
 		display: inline-block;
 		margin-right: 3rem;
@@ -1190,14 +1179,12 @@ select {
 	}
 	/* end of details 2 */
 
-
 	/* Contact */
 	.form-1 .list-unstyled li {
 		display: inline-block;
 		margin-right: 1rem;
 	}
 	/* end of contact */
-
 
 	/* Extra Pages */
 	.ex-basic-1 .text-box {
@@ -1207,10 +1194,8 @@ select {
 }
 /* end of min-width 768px */
 
-
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
 	/* General Styles */
 	.h2-heading {
 		width: 35.25rem;
@@ -1224,7 +1209,6 @@ select {
 		margin-left: auto;
 	}
 	/* end of general styles */
-
 
 	/* Navigation */
 	.navbar {
@@ -1267,7 +1251,7 @@ select {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
@@ -1288,7 +1272,6 @@ select {
 		margin-left: 1rem;
 	}
 	/* end of navigation */
-
 
 	/* Header */
 	.header {
@@ -1311,21 +1294,19 @@ select {
 	}
 	/* end of header */
 
-
 	/* Services */
 	.cards-1 .card {
 		display: inline-block;
 		width: 298px;
 		vertical-align: top;
 	}
-	
-	.cards-1 .card:nth-of-type(3n+2) {
+
+	.cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
 	/* end of services */
 
-	
 	/* Details 1 */
 	.basic-1 .image-container {
 		margin-bottom: 0;
@@ -1339,7 +1320,6 @@ select {
 		width: 23rem;
 	}
 	/* end of details 1 */
-
 
 	/* Details Modal */
 	/* Stops body and navbar shift on modal open */
@@ -1362,13 +1342,12 @@ select {
 		margin-right: auto;
 		margin-left: auto;
 	}
-	
+
 	.modal-content .image-container {
 		margin-bottom: 0;
 	}
 	/* end of details modal */
-	
-	
+
 	/* Details 2 */
 	.counter .text-container {
 		margin-bottom: 0;
@@ -1380,13 +1359,12 @@ select {
 	}
 	/* end of details 2 */
 
-
 	/* Projects */
 	.filter .button {
 		margin-right: 0.25rem;
 		margin-left: 0.25rem;
 	}
-	
+
 	.filter .grid {
 		max-width: 750px;
 	}
@@ -1400,7 +1378,6 @@ select {
 	}
 	/* end of projects */
 
-
 	/* Testimonials */
 	.slider-1 .swiper-container {
 		width: 92%;
@@ -1411,7 +1388,7 @@ select {
 		width: 22px;
 		background-size: 22px 34px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -16px;
 		width: 22px;
@@ -1422,7 +1399,7 @@ select {
 		display: flex;
 		align-items: flex-start;
 	}
-	
+
 	.slider-1 .text {
 		flex-direction: column;
 	}
@@ -1430,12 +1407,11 @@ select {
 	.slider-1 .testimonial-author {
 		margin-top: 0.625rem;
 	}
-	
+
 	.slider-1 .testimonial-image {
 		margin-right: 1.125rem;
 	}
 	/* end of testimonials */
-
 
 	/* Pricing */
 	.cards-2 .card {
@@ -1443,20 +1419,18 @@ select {
 		width: 298px;
 		vertical-align: top;
 	}
-	
-	.cards-2 .card:nth-of-type(3n+2) {
+
+	.cards-2 .card:nth-of-type(3n + 2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
 	/* end of pricing */
-
 
 	/* Invitation */
 	.basic-2 .text-container {
 		padding: 8rem;
 	}
 	/* end of invitation */
-
 
 	/* Footer */
 	.footer h4 {
@@ -1465,7 +1439,6 @@ select {
 		margin-left: auto;
 	}
 	/* end of footer */
-
 
 	/* Copyright */
 	.copyright {
@@ -1482,7 +1455,6 @@ select {
 	}
 	/* end of copyright */
 
-
 	/* Extra Pages */
 	.ex-cards-1 .card {
 		display: inline-block;
@@ -1490,7 +1462,7 @@ select {
 		vertical-align: top;
 	}
 
-	.ex-cards-1 .card:nth-of-type(3n+2) {
+	.ex-cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
@@ -1498,16 +1470,13 @@ select {
 }
 /* end of min-width 992px */
 
-
 /* Min-width 1200px */
 @media (min-width: 1200px) {
-	
 	/* General Styles */
 	.container {
 		max-width: 1140px;
 	}
 	/* end of general styles */
-	
 
 	/* Header */
 	.header {
@@ -1519,7 +1488,7 @@ select {
 	.header .image-container {
 		position: relative;
 	}
-	
+
 	.header .image-container img {
 		position: absolute;
 		top: -80px;
@@ -1529,18 +1498,16 @@ select {
 	}
 	/* end of header */
 
-
 	/* Services */
 	.cards-1 .card {
 		width: 342px;
 	}
-	
-	.cards-1 .card:nth-of-type(3n+2) {
+
+	.cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
 	}
 	/* end of services */
-
 
 	/* Details 1 */
 	.basic-1 .image-container {
@@ -1553,14 +1520,12 @@ select {
 	}
 	/* end of details 1 */
 
-
 	/* Details Modal */
 	.modal-content {
 		padding-right: 2rem;
 		padding-left: 2rem;
 	}
 	/* end of details modal */
-
 
 	/* Details 2 */
 	.counter {
@@ -1571,7 +1536,7 @@ select {
 	.counter .image-container {
 		position: relative;
 	}
-	
+
 	.counter .image-container img {
 		position: absolute;
 		top: -60px;
@@ -1581,43 +1546,38 @@ select {
 	}
 	/* end of details 2 */
 
-
 	/* Projects */
 	.filter .grid {
 		max-width: 1120px;
 	}
 	/* end of projects */
 
-
 	/* Testimonials */
 	.slider-1 .swiper-button-prev {
 		left: -24px;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -24px;
 	}
 	/* end of testimonials */
 
-
 	/* Pricing */
 	.cards-2 .card {
 		width: 342px;
 	}
-	
-	.cards-2 .card:nth-of-type(3n+2) {
+
+	.cards-2 .card:nth-of-type(3n + 2) {
 		margin-right: 2.5rem;
 		margin-left: 2.5rem;
 	}
 	/* end of pricing */
-
 
 	/* Invitation */
 	.basic-2 .text-container {
 		padding: 8rem 12rem;
 	}
 	/* end of invitation */
-
 
 	/* Contact */
 	.form-1 form {
@@ -1627,20 +1587,18 @@ select {
 	}
 	/* end of contact */
 
-
 	/* Footer */
 	.footer .decoration-circles {
 		left: 0;
 	}
 	/* end of footer */
 
-
 	/* Extra Pages */
 	.ex-cards-1 .card {
 		width: 336px;
 	}
 
-	.ex-cards-1 .card:nth-of-type(3n+2) {
+	.ex-cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
