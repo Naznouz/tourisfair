@@ -24,7 +24,7 @@ Table Of Contents:
 /*****************************************
 Colors:
 - Backgrounds - light gray #f9f9f9
-- Buttons - red #6EC1E4
+- Buttons - light blue #6EC1E4
 - Buttons - blue #6168ff
 - Headings text - black #222222
 - Body text - dark gray #5e6576
@@ -1605,3 +1605,32 @@ select {
 	/* end of extra pages */
 }
 /* end of min-width 1200px */
+.shadow-button {
+	background-color: #000000;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	border-color: #000000 !important;
+	outline: none;
+}
+
+.shadow-button:hover {
+	background-color: #000000;
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+	color: #fff;
+	border-color: #000000 !important;
+	transform: translateY(-7px);
+}
+
+.shadow-button-purple {
+	background-color: #6ec1e4;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	outline: none;
+}
+
+.shadow-button-purple:hover {
+	background-color: #6168ff !important;
+	box-shadow: 0px 15px 20px rgba(46, 73, 229, 0.4);
+	color: #fff !important;
+	transform: translateY(-7px);
+}
