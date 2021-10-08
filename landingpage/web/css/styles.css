@@ -371,8 +371,8 @@ select {
 }
 
 .navbar .logo-image img {
-	width: 133px;
-	height: 30px;
+	width: auto;
+	height: 50px;
 }
 
 .navbar .logo-text {
@@ -947,6 +947,11 @@ select {
 /**********************/
 .basic-2 {
 	padding-top: 3rem;
+	text-align: center;
+}
+
+.basic-3 {
+	padding-top: 9rem;
 	text-align: center;
 }
 
