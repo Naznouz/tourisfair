@@ -22,6 +22,7 @@
     
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
@@ -35,15 +36,14 @@
     <!-- Navigation -->
     <nav id="navbarExample" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
         <div class="container">
-
             <!-- Image Logo -->
             <a class="navbar-brand logo-image" href="index.html"><img src="images/image.png" alt="alternative"></a> 
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href="index.html">Zinc</a> -->
 
-            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation" style="color: black">
-                <span class="navbar-toggler-icon" style="color: black"></span>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
@@ -84,7 +84,7 @@
     <header id="header" class="header">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-xl-5">
+                <div class="col-lg-6 col-xl-5" data-aos="fade-right" data-aos-duration="500">
                     <div class="text-container">
                         <div class="section-title">Dein Digitaler Reiseplaner</div>
                         <h1 class="h1-large">Erlebe dein Reiseziel anders</h1>
@@ -93,7 +93,7 @@
                         <a class="quote" href="#contact"><i class="fas fa-paper-plane"></i>Kontaktiere uns!</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
+                <div class="col-lg-6 col-xl-7" data-aos="fade-left" data-aos-duration="1000">
                     <div class="image-container">
                         <img class="img-fluid" style="width: 700px; height: auto;" src="images/header-illustration.svg" alt="alternative">
                     </div> <!-- end of image-container -->
@@ -104,7 +104,7 @@
     <!-- end of header -->
 
     <!-- Details 1 -->
-    <div id="details" class="basic-1">
+    <div id="details" class="basic-1" data-aos="fade-right" data-aos-duration="1000">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-7">
@@ -113,7 +113,7 @@
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
+                    <div class="text-container" >
                         <h2><span>Perfect solution</span><br> for your small business</h2>
                         <p>Maecenas fringilla quam posuere, pellentesque est nec, gravida turpis. Integer vitae mollis felis. Integer id quam id tellus hendrerit laciniad binfer</p>
                         <p>Sed id dui rutrum, dictum urna eu, accumsan turpis. Fusce id auctor velit, sed viverra dui rem dina</p>
@@ -133,7 +133,7 @@
                 <div class="col-lg-12">
                     
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duration="800" >
                         <div class="card-icon blue">
                             <span class="far fa-file-alt"></span>
                         </div>
@@ -163,7 +163,7 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
                         <div class="card-icon blue">
                             <span class="fas fa-solar-panel"></span>
                         </div>
@@ -193,7 +193,7 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
                         <div class="card-icon blue">
                             <span class="fas fa-gift"></span>
                         </div>
@@ -633,22 +633,6 @@
     <button onclick="topFunction()" id="myBtn">
         <img src="images/up-arrow.png" alt="alternative">
     </button>
-
-    <!-- <script>
-        var swiper = new Swiper('.blog-slider', {
-      spaceBetween: 30,
-      effect: 'fade',
-      loop: true,
-      mousewheel: {
-        invert: false,
-      },
-      // autoHeight: true,
-      pagination: {
-        el: '.blog-slider__pagination',
-        clickable: true,
-      }
-    });
-    </script> -->
     <!-- end of back to top button -->
     	
     <!-- Scripts -->
@@ -657,5 +641,14 @@
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        $(window).load(function() {
+            $("#loading-center").click(function() {
+                $("#loading").fadeOut(500);
+            })		
+        });
+    </script>
 </body>
 </html>
