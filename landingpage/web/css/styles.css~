@@ -150,7 +150,7 @@ a:hover {
 	margin-bottom: 0.75rem;
 	padding: 0.125rem 1.75rem;
 	border-radius: 30px;
-	background-color: #250127;
+	background-color: #00aae3;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
